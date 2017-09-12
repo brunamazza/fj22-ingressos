@@ -6,12 +6,13 @@ import java.time.LocalTime;
 import java.util.Arrays;
 import java.util.List;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import br.com.caelum.ingresso.model.Filme;
 import br.com.caelum.ingresso.model.Sala;
 import br.com.caelum.ingresso.model.Sessao;
-import junit.framework.Assert;
+
 
 public class GerenciadorDeSessaoTest {
 	
