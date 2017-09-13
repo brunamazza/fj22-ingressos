@@ -29,6 +29,7 @@ public class SessaoDao {
     public Sessao findOne(Integer id) {
 
         return manager.find(Sessao.class, id);
+        
     }
     public void delete(Integer id) {
         manager.remove(findOne(id));
@@ -36,5 +37,6 @@ public class SessaoDao {
 	public List<Sessao> buscaSessoesDoFilme(Filme filme) {
 		return manager.createQuery("select s from Sessao s where s.filme = :filme", Sessao.class).setParameter("filme", filme).getResultList();
 	}
+	
 
 }
